@@ -1,4 +1,10 @@
+import path from 'path';
 const config = {
+  alias: {
+    '@/static': path.resolve(__dirname, '..', 'src/static'),
+    '@/common': path.resolve(__dirname, '..', 'src/common'),
+    '@/components': path.resolve(__dirname, '..', 'src/components'),
+  },
   projectName: 'myApp',
   date: '2022-4-1',
   designWidth: 750,
@@ -45,6 +51,7 @@ const config = {
     }
   },
   h5: {
+    devServer:{port:8000,host:"localhost"},
     publicPath: '/',
     staticDirectory: 'static',
     postcss: {

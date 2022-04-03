@@ -1,0 +1,8 @@
+暴露get方法
+暴露post方法
+post自定义contentType
+增加配置文件
+token定义
+添加判断状态，记录异常信息
+增加异常错误logError日志
+增加统一日志上报
