@@ -1,5 +1,6 @@
 import { Component } from 'react'
 import { View, Text, Button } from '@tarojs/components'
+import './../../app.scss'
 import './index.scss'
 import Child from "./../../components/child"
 
@@ -32,17 +33,21 @@ export default class Index extends Component {
 
   componentDidShow () { }
 
-  componentDidHide () { }
+  componentDidHide () { } 
+
+  onLoad(option){
+    console.log(option.id)
+  }
  
   clickme = ()=>{
     this.setState({name:"cenline zhang ~!",curId:this.state.curId+1});
   }
 
   render () {
-    let {name,curId,userInfo} = this.state;
+    let {name,curId,userInfo} = this.state; 
     console.log("render");
     return (
-      <View className='index'>
+      <View className='index page'>
         <Text>Hello world!!!!!{name}</Text>
         <Button onClick={this.clickme}>点我 {curId}</Button>
         <Child userInfo={userInfo} ></Child>  

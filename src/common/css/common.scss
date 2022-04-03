@@ -1,0 +1,29 @@
+.page { height: 100%; background-color: rgb(255, 255, 255);overflow: hidden;}
+
+view, cover-view, navigator, rich-text{font-family: "Source Han Sans CN","PingFang-SC-Medium","Microsoft YaHei" sans-serif;letter-spacing:4rpx}
+button:after{display: none;} 
+
+.full{width:100%;height:100%;}
+.ab{position: absolute;}
+.abLT{position: absolute;left:0;top:0;}
+.abCT{position: absolute;left:0;top:0;right:0;margin: auto;}
+.abCC{position: absolute;left:0;top:0;right:0;bottom:0;margin: auto;}
+.abRT{position: absolute;right:0;top:0;}
+.abLB{position: absolute;left: 0;bottom: 0;}
+.abLC{position: absolute;left: 0;bottom: 0;top:0;margin:auto;}
+.abRB{position: absolute;right: 0;bottom: 0;}
+.abCB{position: absolute;left:0;right:0;bottom:0;margin: auto;}
+.abFull{position: absolute;top: 0;left: 0;bottom: 0;right: 0;}
+ 
+.btns .btn.btnShadow, .btns .btnOne.btnShadow{box-shadow: 5rpx 5rpx 10rpx rgba(0,0,0,.2)}
+.boxShadow{box-shadow: 0rpx 3rpx 16rpx 0rpx rgba(185, 210, 255, 0.7), 0rpx 5rpx 14rpx 0rpx rgba(0, 0, 0, 0.04);}
+   
+.btnOne{width: 350rpx;height: 68rpx;background-color:#b9d2ff;font-size:28rpx;line-height:68rpx;text-align:center;color:#ffffff;font-weight: 600;font-size: 28rpx;display: inline-block;}
+.btnOne.lock{background-color: #cdcdcd;} 
+.btnTwo{width: 200rpx;height: 68rpx;background-color:#b9d2ff;font-size:28rpx;line-height:68rpx;text-align:center;color: #fff;border-radius: 0;border:0;display: inline-block;}
+.btnTwo:first-child{margin-right: 56rpx;}
+
+.screen169 .content{ padding-top: 10rpx;} 
+
+
+  
