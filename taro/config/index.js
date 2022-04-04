@@ -5,6 +5,9 @@ const config = {
     '@/common': path.resolve(__dirname, '..', 'src/common'),
     '@/components': path.resolve(__dirname, '..', 'src/components'),
   },
+  sass: {
+    resource: path.resolve(__dirname, '..', 'src/common/css/common.scss')
+  },
   projectName: 'myApp',
   date: '2022-4-1',
   designWidth: 750,
@@ -38,7 +41,7 @@ const config = {
       url: {
         enable: true,
         config: {
-          limit: 1024 // 设定转换尺寸上限
+          limit: 1024 // 设定 图片 转换尺寸上限
         }
       },
       cssModules: {

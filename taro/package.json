@@ -37,12 +37,16 @@
   "dependencies": {
     "@babel/runtime": "^7.7.7",
     "@tarojs/components": "3.4.4",
-    "@tarojs/runtime": "3.4.4",
-    "@tarojs/taro": "3.4.4",
     "@tarojs/plugin-framework-react": "3.4.4",
     "@tarojs/react": "3.4.4",
+    "@tarojs/runtime": "3.4.4",
+    "@tarojs/taro": "3.4.4",
+    "prerender-spa-plugin": "^3.4.0",
+    "react": "^17.0.0",
     "react-dom": "^17.0.0",
-    "react": "^17.0.0"
+    "webpack-bundle-analyzer": "^4.5.0",
+    "eslint-plugin-react-hooks": "^4.2.0",
+    "webpack-chain": "^6.5.1"
   },
   "devDependencies": {
     "@babel/core": "^7.8.0",

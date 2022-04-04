@@ -1,4 +1,4 @@
-import { Component } from 'react'
+import { Component, useState, useEffect } from 'react'
 import { View, Text, Button ,Image} from '@tarojs/components'
 import Taro from '@tarojs/taro';
 import { setData,getData } from '@/common/js/utils';
@@ -6,8 +6,9 @@ import head from '@/static/images/1.png'
 
 const isWeapp = process.env.TARO_ENV === 'weapp' ? true : false;
 const isH5 = process.env.TARO_ENV === 'h5' ? true : false;
-
 export default class Index extends Component { 
+  
+  // const [count, setCount] = useState(0);
 
   state = {
     name: "Celine",
@@ -63,6 +64,7 @@ export default class Index extends Component {
   clickMe(param,e){ 
       console.log(setData())
       console.log(param,e) // 3, TaroEvent
+      // setCount(count + 1);
   }
 
   render () { 
@@ -72,7 +74,7 @@ export default class Index extends Component {
         <Text>Test</Text>  
         <Button onClick={this.clickMe.bind(this,3)}>调用外部方法</Button>
         {/* <Image class="head" mode="widthFix" src={require("@/static/images/1.png")}></Image> */}
-        <Button onClick={this.gotoIndex}></Button>
+        <Button onClick={this.gotoIndex}>去首页</Button>
         <Button onClick={()=>this.setState({isLogin:!isLogin})}>{isLogin !== true? '单击登录':'已经登录'}</Button>
         {isLogin? <Text>已登录</Text> : <Text>用户未登录</Text>} 
         <Image class="desc" mode="widthFix" src={head}></Image>
